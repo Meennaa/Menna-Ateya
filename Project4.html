@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+         body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #1b1a4e, #000);
+    color: #333;
+    font-family: "Jost", sans-serif;
+         }
+
+      header {
+    align-items: center;
+    padding: 10px;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jost", sans-serif;
+    position: absolute;
+    top: 6.5%;
+    right: 0%;
+    
+}
+
+.container2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.container2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container2 ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fcff48;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 0.5s;
+}
+.container2 ul li:hover::after{
+    width: 100%;
+}
+p{
+color: #fff;
+}
+
+.heading{
+    color: #fff;
+}
+.credit{
+    color: #fff;
+}
+.order {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 10px 7px 20px rgb(0, 0, 0);
+    background-color: #fff;
+}
+
+.order form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.order form .inputBox .input {
+    width: calc(41% - 0.2rem);
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.5rem;
+}
+
+.order form .inputBox .input span {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input select,
+.order form .inputBox .input textarea {
+    background: #c9c9f6;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #000000;
+    text-transform: none;
+    width: 100%;
+    margin-top: 0.5rem;
+
+}
+.order form .inputBox .input textarea {
+    resize: none;
+}
+
+.order form .inputBox .input select {
+    appearance: none;
+}
+
+.order form .inputBox .input select::-ms-expand {
+    display: none;
+}
+
+.order form .btn {
+    background-color: #130f40;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order form .btn:hover {
+    background-color: #443c82;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <header>
+           <ul>
+           <li><a href="Project.html">Home</a></li>
+           <li><a href="#">Houses</a></li>
+           <li><a href="Project3.html">Products</a></li>
+           <li><a href="Project4.html">Order</a></li>
+        </ul>
+    </header>
+        </div>
+        <br><br><br><br><br><br><br>
+        <h1 class="heading"><center>Order <span>Now</span></center></h1>
+        <p><center>Secure your supplies early! Order now before the school year kicks off.</center></p>
+        <section class="order" id="order">
+            <form action="">
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Name:</span>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <span>Phone Number:</span>
+                        <input type="tel">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>E-mail:</span>
+                        <input type="email">
+                    </div>
+                    <div class="input">
+                        <span>What's your House</span>
+                        <select name="house" id="house">
+                            <option value="" disabled selected>Select</option>
+                            <option value="Gryffindor">Gryffindor</option>
+                            <option value="Ravenclaw">Ravenclaw</option>
+                            <option value="Hufflepuff">Hufflepuff</option>
+                            <option value="Slytherin">Slytherin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Fav Character:</span>
+                        <select name="Characherr" id="Character">
+                            <option value="" disabled selected>Select</option>
+                            <option value="1">Harry Potter</option>
+                            <option value="2">Hermione Granger</option>
+                            <option value="3">Ron Weasley</option>
+                            <option value="4">Luna Lovegood</option>
+                            <option value="5">Cedric Diggory</option>
+                            <option value="6">Severus Snape</option>
+                            <option value="7">Draco Malfoy</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Address:</span>
+                        <textarea id="shipping-address" rows="1"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Order" class="btn">
+            </form>
+        </section>
+        <section>
+            <div class="Copyright">
+                <p>Copyright © 2024 Menna Ateya. All rights reserved</p>
+            </div>
+        </section>
+</body>
+</html>

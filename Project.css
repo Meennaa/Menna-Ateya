@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: HogwartsFont;
+    src: url('BLKCHCRY.TTF');
+}
+
+@font-face {
+    font-family: HogwartsFont2;
+    src: url('MagicLegendsDemoRegular.ttf');
+}
+
+@font-face {
+    font-family: HogwartsFont3;
+    src: url('Wizardry\ Night.ttf');
+}
+
+@font-face {
+    font-family: HogwartsFont4;
+    src: url('HARRYP__.TTF');
+}
+.container {
+    background-image: linear-gradient(to right, #01022de5 30%, #00000088), url('Photos/339227.jpg');
+    width: 98%;
+    height: 670px;
+}
+
+.container:hover {
+    background-image: linear-gradient(to right, #01022de5 30%, transparent), url('Photos/339227.jpg');
+}
+
+.container ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fcff48;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 0.5s;
+}
+.container ul li:hover::after{
+    width: 100%;
+}
+.Content{
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+    font-family: "Caveat", cursive;
+}
+.Content h2{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: HogwartsFont4, sans-serif;
+}
+.Content p{
+    letter-spacing: 3px;
+    width: 400px;
+    padding: 20px 0;
+    font-family: "Madimi One", sans-serif;
+}
+.Content button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+}
+.Content button:hover{
+    background-color: transparent;
+    border-color: wheat;
+    color: white;
+}
+
+/*Products page(3)*/

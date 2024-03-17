@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@font-face {
+    font-family: HogwartsFont4;
+    src: url('HARRYP__.TTF');
+}
+@font-face {
+    font-family: HogwartsFont3;
+    src: url('Wizardry\ Night.ttf');
+}
+body {
+    margin: 0;
+}
+
+        img {
+    filter: brightness(1.5);
+}
+
+      header {
+    align-items: center;
+    padding: 10px;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jost", sans-serif;
+    position: absolute;
+    top: 6.5%;
+    right: 0%;
+    
+}
+h1{
+    font-family: HogwartsFont3, sans-serif;
+}
+p{
+    font-family: "Madimi One", sans-serif;
+}
+.container2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.container2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container2 ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fcff48;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 0.5s;
+}
+.container2 ul li:hover::after{
+    width: 100%;
+}
+        /*first house*/
+        body {
+            background-color: #ffffff;
+        }
+
+        .Gryffindor {
+            width: 100%;
+            padding: 100px 0px;
+            background-image: linear-gradient(to right, #7F0909, #FFC500);
+        }
+
+        .Gryffindor img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .About1 {
+            width: 550px;
+        }
+
+        .main1 {
+            width: 11200px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .About1 h1 {
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .About1 p {
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+        .About1 button {
+            background-color: rgba(194, 55, 0, 0.8);
+            color: aliceblue;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-size: 25px;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: 0.4s;
+        }
+
+        .About1 button:hover {
+            background-color: transparent;
+            border: 2px solid rgba(194, 55, 0, 0.8);
+            cursor: pointer;
+        }
+
+        /*Second house*/
+
+        .Ravenclaw {
+            width: 100%;
+            padding: 100px 0px;
+            background-image: linear-gradient(to right, #000A90, #946B2D);
+        }
+
+        .Ravenclaw img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .About2 {
+            width: 550px;
+        }
+
+        .main2 {
+            width: 11200px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .About2 h1 {
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .About2 p {
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+        .About2 button {
+            background-color: #000A90;
+            color: aliceblue;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-size: 25px;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: 0.4s;
+        }
+
+        .About2 button:hover {
+            background-color: transparent;
+            border: 2px solid #000A90;
+            cursor: pointer;
+        }
+
+        /*Third house*/
+
+        .Hufflepuff {
+            width: 100%;
+            padding: 100px 0px;
+            background-image: linear-gradient(to right, #EEE117, #000000);
+        }
+
+        .Hufflepuff img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .About3 {
+            width: 550px;
+        }
+
+        .main3 {
+            width: 11200px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .About3 h1 {
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .About3 p {
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+        .About3 button {
+            background-color: #EEE117;
+            color: aliceblue;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-size: 25px;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: 0.4s;
+        }
+
+        .About3 button:hover {
+            background-color: transparent;
+            border: 2px solid #EEE117;
+            cursor: pointer;
+        }
+
+        /*Forth house*/
+
+        .Slytherin {
+            width: 100%;
+            padding: 100px 0px;
+            background-image: linear-gradient(to right, #0D6217, #AAAAAA);
+        }
+
+        .Slytherin img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .About4 {
+            width: 550px;
+        }
+
+        .main4 {
+            width: 11200px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .About4 h1{
+        color:white;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-family: HogwartsFont4, sans-serif;
+    }
+    .About4 p{
+        color:rgba(255, 255, 255, 0.8);
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom:45px;
+    }
+    .About4 button{
+        background-color: #0D6217;
+        color: aliceblue;
+        text-decoration: none;
+        border:2px solid transparent;
+        font-size: 25px;
+        padding:13px 30px;
+        border-radius:30px;
+        transition: 0.4s;
+    }
+    .About4 button:hover{
+        background-color: transparent;
+        border: 2px solid #0D6217;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <header>
+           <ul>
+           <li><a href="Project.html">Home</a></li>
+           <li><a href="#">Houses</a></li>
+           <li><a href="Project3.html">Products</a></li>
+           <li><a href="Project4.html">Order</a></li>
+        </ul>
+    </header>
+    
+    <section class="Gryffindor">
+        <div class="main1">
+            <img src="Photos/Grrifendor logo 3.png" width="420" height: 250px>
+            <div class="About1">
+                <h1>Gryffindor</h1>
+                <p>Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter series. 
+                    It values bravery, courage, and chivalry, and its emblematic animal is the lion. Gryffindor's common room is located in Gryffindor Tower
+                    , and its head of house is Professor Minerva McGonagall. 
+                    Famous Gryffindors include Harry Potter, Hermione Granger, and Ron Weasley.</p>
+                    <button>Learn more</buttom>
+            </div>
+        </div>
+    </section>
+    <!--Second house-->
+
+    <section class="Ravenclaw">
+        <div class="main2">
+            <img src="Photos/Ravenclaw logo.png" width="430" height: 250px>
+            <div class="About2">
+                <h1>Ravenclaw</h1>
+                <p>Ravenclaw is one of the four houses at Hogwarts School of Witchcraft and Wizardry, 
+                    known for valuing intelligence, creativity, wit, and wisdom. Its emblematic animal is the eagle,
+                     symbolizing vision and higher perspective. The house was founded by Rowena Ravenclaw and its colors are blue and silver. 
+                    Ravenclaw students are often characterized by their love for learning, curiosity, and pursuit of knowledge.</p>
+                    <button>Learn more</buttom>
+            </div>
+        </div>
+    </section>
+    <!--Third house-->
+
+    <section class="Hufflepuff">
+        <div class="main3">
+            <img src="Photos/Hufflepuff logo.png" width="420" height: 250px>
+            <div class="About3">
+                <h1>Hufflepuff</h1>
+                <p>
+                    Hufflepuff is one of the four houses at Hogwarts School of Witchcraft and Wizardry, founded by Helga Hufflepuff. 
+                    It values qualities such as hard work, loyalty, patience, and fair play. The house emblem is a badger, 
+                    representing tenacity and perseverance.
+                     Hufflepuff's colors are yellow and black, reflecting its warm and welcoming nature.</p>
+                    <button>Learn more</buttom>
+            </div>
+        </div>
+    </section>
+    <!--Fourth house-->
+
+    <section class="Slytherin">
+        <div class="main4">
+            <img src="Photos/slytherin logo.png" width="510" height: 250px>
+            <div class="About4">
+                <h1>Slytherin</h1>
+                <p>Slytherin is one of the four houses at Hogwarts School of Witchcraft and Wizardry, founded by Salazar Slytherin.
+                     It values ambition, cunning, resourcefulness, and determination. The house emblem is a serpent, symbolizing cleverness and adaptability. 
+                    Slytherin's colors are green and silver, reflecting its traits of ambition and leadership.</p>
+                    <button>Learn more</buttom>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
